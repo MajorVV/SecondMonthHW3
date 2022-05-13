@@ -10,9 +10,6 @@ public class BankAccount {
         System.out.println("Вы пополнили счет на: " + (int) getAmount() + " Сом");
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
 
     public void withDraw(int sum) throws LimitException {
         if (sum > amount) {
